@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="myimage" src="space.jpeg">
+      </a-assets>
+          
+            <a-animation attribute="rotation" to="0 -360 0" dur="400000" fill="forwards" repeat="indefinite" easing="linear">
+            </a-animation>
+          
+            <a-video src="BrokenAngel.mp4" autoplay="true" width="19" height="11" position="0 5.5 -8"></a-video>
+          <a-curvedimage src="#myimage"></a-curvedimage>
+          <a-sky src="#myimage"></a-sky>
+    </a-scene>
+  </body>
+</html>
